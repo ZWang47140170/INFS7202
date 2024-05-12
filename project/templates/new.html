@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="../static/js/render.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Add New Questionnaire</h2>
+            <a class="return" href="/">My Questionnaires</a>
+        </div>
+    </div>
+    <div class="content clear" id="content">
+        <div class="paper">
+            <h3 class="title revise" contenteditable="true" id="title">Enter Title Here</h3>
+            <div class="paper-content" id="paper-content">
+                <div class="new-question" id="new-question-btn">
+                    <div class="choose-type" id="choose-type">
+                        <label class="qt"><input type="radio" name="q-type">Single Choice</label><br>
+                        <label class="qt"><input type="radio" name="q-type">Multiple Choice</label><br>
+                        <label class="qt"><input type="radio" name="q-type">Text Box</label>
+                    </div>
+                    <h3 id="new-question">Add Question</h3>
+                </div>
+            </div>
+            <div class="content-footer">
+                <label for="time" class="date-label">
+                    Questionnaire Deadline:
+                    <input type="text" id="time" placeholder="Enter yyyy-mm-dd" class="revise">
+                </label>
+                <button type="button" id="save" class="foot-btn">Publish Questionnaire</button>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/new.js"></script>
+</body>
+</html>
